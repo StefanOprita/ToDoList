@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <div class="Titlu">
+      <p>My to-do list!</p>
+    </div>
+    <div class="Input">
+      <input class="addTodo" placeholder="Add a new to-do..." autofocus="" [(ngModel)]="newToDo.text" (keyup.enter)="addTodo()">
+    </div>
+    <div class="Show" *ngIf="ToDoList.length>0">
+      <p>You have {{numberNotFinished()}} things to do!</p>
+    </div>
+
+    <div class="List" *ngIf="ToDoList.length>0">
+        <ul>
+          <li *ngFor="let todo of ToDoList">
+            <div class="ListElement" [style.background-color]="todo.complete?'green':'rgb(245, 220, 201)'" >
+              <input class="toggle"  type="checkbox" (click)="toggleTodo(todo)" [checked]='todo.complete'>
+              <label>{{todo.text}}</label>
+              <button class="destroy" (click)="removeTodo(todo)">X</button>
+            </div>
+
+          </li>
+        </ul>
+    </div>
+
+   
+
+  </body>
+
+
+  </html>
+
+
+

@@ -1,0 +1,97 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.Titlu{
+   
+    display: flex;
+    justify-content: center;
+    
+    p{
+        font-size: 300%;
+        font-style: italic;
+        font-variant: normal;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+}
+
+.Show{
+    display: flex;
+    justify-content: center;
+    p{
+        font-size: 200%;
+        text-decoration: solid;
+        font-variant: normal;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+
+}
+
+.Input{
+    display: flex;
+    justify-content: center;
+
+}
+.addTodo{
+    outline-width: 0;
+    height: 75px;
+    width: 500px;
+    background-color:rgb(229, 205, 188);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size:35pt;
+    box-shadow: 20px;
+}
+
+.List{
+    
+    ul{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+   }
+    .ListElement{
+        margin:2px;
+        border:10px;
+        height:76px;
+        width:500px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-size:20pt;
+        text-align: center;
+        background-color:rgb(245, 220, 201) ;
+        display: flex;
+        justify-content: space-between;
+
+        .toggle{
+            margin-top: 8px;
+            margin-bottom: 8px;
+            height: 60px;
+            width: 60px;
+            outline-width: 0;
+        }
+
+        label{
+            padding-top: 20px;
+        }
+
+        .destroy{
+            padding: 0;
+            border:1;
+            height: 20px;
+            width: 20px;
+            background-color:rgb(245, 220, 201) ;
+            font-size:10pt;
+            outline-width: 0;
+            text-align: center;
+        }
+  
+
+    }
+}
